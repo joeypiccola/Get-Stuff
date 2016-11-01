@@ -1,0 +1,7 @@
+﻿install:
+    - cinst pester -y
+
+build: $false
+
+    - ps: . .\Tests\appveyor.pester.ps1 -Test
+    - ps: . .\Tests\appveyor.pester.ps1 -Finalize
