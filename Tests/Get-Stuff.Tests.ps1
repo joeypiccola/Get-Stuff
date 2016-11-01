@@ -1,6 +1,4 @@
-﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path) -replace '\.Tests\.', '.'
-Import-Module "$here\$sut" -Force
+﻿Import-Module -Force $PSScriptRoot\..\Get-Stuff.ps1
 
 Describe "Get-Stuff" {
     Context "Test input methods" {
