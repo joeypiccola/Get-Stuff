@@ -7,7 +7,6 @@ skip_commits:
 
 install:
   - cinst pester
-  - Add-WindowsFeature UpdateServices-RSAT
 
 build: false
 
